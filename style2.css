@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+}
+
+span {
+    font-weight: 100;
+    color: rgb(136, 135, 135);
+}
+
+.container {
+    background-color: rgb(28, 71, 68);
+    /* width: 550px; */
+    width: 100vw;
+    max-width: 550px;
+    min-width: 400px;
+    margin: auto;
+    /* margin-top: 20px; */
+    margin-top: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 40px 60px;
+}
+
+.top {
+font-size: 0.75rem;
+}
+
+ .section {
+     /* margin-top: 20px; */
+     margin-top: 3vh;
+ }
+
+.footer {
+    /* width: 500px; */
+flex-basis: 100%;
+
+    margin-top: 50px;
+    /* margin-top: 10vh; */
+ }
+
+figure {
+    float: left;
+    }
+
+.blocks {
+    width:350px ;
+/* flex-basis: 65%; */
+    font-size: 0.63rem;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+ figure, .block-1, .block-2,.block-3,.block-4 {
+     margin-right: 20px;
+ }
+
+ .block-1, .block-2,.block-3,.block-4 {
+     padding-top: 15px;
+ }
+
+
+ @media screen and (max-width:600px) {
+    .top {
+        font-size: 1.1rem;
+        }  
+
+        .section {
+            font-size: 0.9rem;
+        }
+
+        .container {
+            width: 390px;  /*при фиксированной ширине переход будет резкий*/
+            /* flex-basis: 71%; */
+            padding: 30px 0 40px 20px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            padding-top: 18px;
+        }
+
+        .block-1, .block-2,.block-3,.block-4 {
+            font-size: 0.85rem;
+        }
+
+        .footer {
+            width: 90%;
+        }
+
+        figure, .block-4 {
+            order: -1;
+        }
+
+        .blocks {
+            width: 250px;
+            height: 120px;
+        }
+
+        .block-1 {
+            margin-left: 15px;
+   
+        }
+
+        .block-1, .block-2,.block-3,.block-4 {
+            padding-left: 10px;
+        }
+}
